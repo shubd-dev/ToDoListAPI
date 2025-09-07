@@ -20,8 +20,20 @@ public class ToDoTask {
 
     private LocalDateTime deadline;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    private User owner;
+
     @Column(nullable = false)
     private Boolean status;
+
+    public User getOwner() {
+        return owner;
+    }
+
+    public void setOwner(User owner) {
+        this.owner = owner;
+    }
 
     public Long getId() {
         return id;
