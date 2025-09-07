@@ -1,25 +1,26 @@
 package com.roadmap.ToDoListAPI.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 
 
 @Entity
-public class ToDotask {
+@Table(name = "task")
+public class ToDoTask {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(nullable = false)
     private Long id;
 
+    @Column(nullable = false)
     private String taskName;
 
     private String taskDescription;
 
     private LocalDateTime deadline;
 
+    @Column(nullable = false)
     private Boolean status;
 
     public Long getId() {
