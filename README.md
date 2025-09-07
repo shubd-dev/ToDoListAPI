@@ -11,6 +11,7 @@ A simple To-Do List API with user authentication.
 - MySQL
 - Maven
 
+
 ## API Endpoints
 
 ### Authentication
