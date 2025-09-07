@@ -2,6 +2,8 @@
 
 A simple To-Do List API with user authentication.
 
+Project Link: https://roadmap.sh/projects/todo-list-api
+
 ## Technologies
 
 - Java 17
@@ -32,3 +34,7 @@ A simple To-Do List API with user authentication.
 1. Clone the repository.
 2. Configure the database connection in `src/main/resources/application.properties`.
 3. Run the application using `mvnw spring-boot:run`.
+
+## Disclaimer
+
+- This project is not vibe coded except for readme
