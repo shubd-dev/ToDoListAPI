@@ -27,7 +27,7 @@ A simple yet powerful To-Do List API with user authentication, built with Java a
 
 ## API Endpoints 🚀
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/31503789-c5e0b499-93ce-43d1-9594-3f6f799a399b?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D31503789-c5e0b499-93ce-43d1-9594-3f6f799a399b%26entityType%3Dcollection%26workspaceId%3D91a58233-33i9-492f-b284-a52b5e3a3a3b)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://gold-equinox-301252.postman.co/workspace/WeatherAPI_cache~dc3eec1e-4773-49e5-99b0-e7c468b190b3/collection/15678778-794aa1fb-b14f-4054-a831-62a98a2c9874?action=share&creator=15678778)
 
 ### Authentication
 
