@@ -150,7 +150,7 @@ A simple yet powerful To-Do List API with user authentication, built with Java a
     ```bash
     ./mvnw spring-boot:run
     ```
-    The application will be running on `http://localhost:8080`.
+    The application will be running on `http://localhost:8080`
 
 ## Disclaimer ⚠️
 
