@@ -28,9 +28,19 @@ public class TaskService {
     }
 
     public ToDoTask getTaskByIdByUser(Long id, User user){
-        return taskRepository.findById(id)
-                .filter(task -> task.getOwner().equals(user))
-                .orElseThrow(() -> new TaskNotFoundException("Task not found with id: " + id));
+        try {
+            List<ToDoTask> tasks = getAllTasksByUser(user);
+            tasks.stream().filter(task -> task.getOwner().equals(user));
+            tasks.stream().filter(task -> task.getId().equals(id));
+            return tasks.get(id.intValue());
+        } catch (Exception e) {
+            throw new TaskNotFoundException("Task not found with id: "+id);
+        }
+
+
+//        return taskRepository.findById(id)
+//                .filter(task -> task.getOwner().equals(user))
+//                .orElseThrow(() -> new TaskNotFoundException("Task not found with id: " + id));
     }
 
     public ToDoTask updateTask(Long id, ToDoTask taskDetails, User user) {

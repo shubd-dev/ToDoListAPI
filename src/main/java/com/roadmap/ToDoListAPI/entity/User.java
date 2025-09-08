@@ -78,6 +78,8 @@ public class User implements UserDetails {
         this.createdAt = createdAt;
     }
 
+
+
     public Date getUpdatedAt() {
         return updatedAt;
     }

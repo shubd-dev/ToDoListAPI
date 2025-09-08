@@ -20,9 +20,21 @@ public class ToDoTask {
 
     private LocalDateTime deadline;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id", nullable = false)
     private User owner;
+
+    @Override
+    public String toString() {
+        return "ToDoTask{" +
+                "id=" + id +
+                ", taskName='" + taskName + '\'' +
+                ", taskDescription='" + taskDescription + '\'' +
+                ", deadline=" + deadline +
+                ", owner=" + owner +
+                ", status=" + status +
+                '}';
+    }
 
     @Column(nullable = false)
     private Boolean status;
