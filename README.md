@@ -1,6 +1,7 @@
 # ToDoListAPI 📝
 
-A simple yet powerful To-Do List API with user authentication, built with Java and Spring Boot
+A simple yet powerful To-Do List API with user authentication, built with Java and Spring Boot.
+<br>[Project idea](https://roadmap.sh/projects/todo-list-api)
 
 ## Features ✨
 
